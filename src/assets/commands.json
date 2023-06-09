@@ -1,0 +1,41 @@
+[
+    {
+        "help": {
+            "helper": "Response for the “help” command",
+            "commands": {
+                "list": {
+                    "command": "ls --repo",
+                    "function": "Command for list my repositories "
+                },
+                "reachme": {
+                    "command": "reachme",
+                    "function": "Command for contact"
+                },
+                "about": {
+                    "command": "about",
+                    "function": "Command to know me better"
+                },
+                "skills": {
+                    "command": "skills",
+                    "function": "Command to see what I have experience with"
+                },
+                "xp": {
+                    "command": "xp",
+                    "function": "My experience in the field"
+                },
+                "lang": {
+                    "command": "lang",
+                    "function": "Change the language of the terminal"
+                },
+                "fontsize": {
+                    "command": "fontsize",
+                    "function": "Change the font size of the terminal"
+                },
+                "clear": {
+                    "command": "clear",
+                    "function": "Clear console"
+                }
+            }
+        }
+    }
+]

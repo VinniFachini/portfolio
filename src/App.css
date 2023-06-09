@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.terminal{
+  background-color:rgba(11, 11, 11, 0.75);
+  border-radius: 15px;
+  width: 96vw;
+  height: 96vh;
+  position: relative;
+  font-size: 20px;
+}
+
+.top-bar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(43, 43, 43);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.top-bar span.dot {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 10px;
+  cursor: pointer;
+  top: 50%;
+  transform: translate(0%, -100%);
+}
+
+.top-bar span.dot:hover{
+  filter: brightness(0.8);
+}
+
+.top-bar span.dot.red {
+  background-color: #F2585E;
+}
+
+.top-bar span.dot.yellow {
+  background-color: #FBBF4F;
+}
+.top-bar span.dot.green {
+  background-color: #3CCF4B;
+}
+
+
+.top-bar span.dot:first-child{
+  margin-left: 20px;
+}
+
+.commands-container:empty {
+  margin-top: 60px;
+}
+
+.commands-container {
+  max-height: 92vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.commands-container::-webkit-scrollbar {
+  display: none;
+}
+
+.cli-wrapper{
+  margin-left: 16px;
+  /* padding-block: 1px; */
+}
+
+.cli-wrapper:first-child{
+  margin-top: 60px;
+}
+
+.cli-wrapper.welcome{
+  color: #FF8D23;
+}
+
+.cli-wrapper.help.indented {
+  margin-left: 32px;
+}
+
+.cli-wrapper.help.indented.text {
+  max-width: 90%;
+  padding-block: 16px;
+}
+
+.cli-wrapper.help.indented .complex-line {
+  display: flex;
+  width: 700px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.cli-wrapper.help.indented .complex-line .command{
+  width: 40%;
+}
+
+.cli-wrapper.help.indented .complex-line .command:empty{
+  display: none;
+}
+
+.cli-wrapper.help.indented .complex-line .command:empty {
+  width: 900px;
+}
+
+.cli-wrapper.help.indented .complex-line .commandFunction {
+  width: 100%;
+  text-align: left;
+}
+
+.cli-wrapper.help.indented:first-of-type{
+  margin-block: 40px;
+}
+
+.cli-wrapper.command {
+  color: #00D02E;
+}
+
+input[type="text"]{
+  border: none;
+  background-color: transparent;
+  outline: none;
+  margin-left: 10px;
+  color: #00D02E;
+  line-height: 1;
+  font-size: 20px;
+  width: 40%;
+}
